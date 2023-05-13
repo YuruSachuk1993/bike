@@ -1,0 +1,55 @@
+.header {
+   position: absolute;
+   width: 100%;
+   z-index: 50;
+   left: 0;
+   top: 35px;
+
+   &__row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 85px;
+   }
+
+   &__menu {
+   }
+
+   &__logo {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      img {
+         margin-left: -50%;
+      }
+   }
+}
+.menu {
+   &__icon {
+   }
+
+   &__body {
+   }
+
+   &__list {
+      display: flex;
+      gap: 37.5px;
+      li {
+         &:nth-child(2) {
+            padding-right: 100px;
+         }
+         &:nth-child(3) {
+            padding-left: 100px;
+         }
+      }
+   }
+
+   &__link {
+      color: #4d4959;
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+   }
+}
+.icon-menu {
+}
