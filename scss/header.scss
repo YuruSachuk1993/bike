@@ -33,13 +33,39 @@
 
    &__list {
       display: flex;
-      gap: 37.5px;
+
       li {
+         position: relative;
+         &:nth-child(1) {
+            padding-right: 76px;
+            &::after {
+               content: "";
+               position: absolute;
+               bottom: 0;
+               right: 33px;
+               width: 2px;
+               height: 2px;
+               background-color: #4d4959;
+            }
+         }
+         &:nth-child(4) {
+            padding-left: 76px;
+            &::after {
+               content: "";
+               position: absolute;
+               bottom: 0;
+               left: 33px;
+               width: 2px;
+               height: 2px;
+               background-color: #4d4959;
+            }
+         }
          &:nth-child(2) {
             padding-right: 100px;
          }
          &:nth-child(3) {
             padding-left: 100px;
+            
          }
       }
    }
