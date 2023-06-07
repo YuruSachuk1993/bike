@@ -400,6 +400,326 @@ h1, h2, h3, h4, h5, h6 {
   margin: 35px auto 0 auto;
 }
 
+.vintage__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media (max-width: 1100px) {
+  .vintage__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.vintage__column {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 33.333%;
+          flex: 0 1 33.333%;
+}
+.vintage__column_g {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 66.667%;
+          flex: 0 1 66.667%;
+}
+.vintage__image {
+  padding: 0px 0px 37.51% 0px;
+}
+.blask {
+  text-align: center;
+  padding: 70px 65px 55px 65px;
+  position: relative;
+}
+@media (max-width: 1400px) {
+  .blask {
+    padding: 40px 35px 30px 35px;
+  }
+}
+.blask::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  margin: 0px 0px 0px -10px;
+  z-index: 2;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #fff;
+}
+.blask__icon {
+  margin: 0px 0px 34px 0px;
+}
+.blask__title {
+  color: #353738;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
+  margin: 0px 0px 24px 0px;
+}
+.blask__text {
+  color: #848789;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 29.99px;
+}
+.blask__text::after {
+  content: "";
+  width: 50px;
+  height: 1px;
+  background-color: black;
+  display: block;
+  margin: 35px auto 0 auto;
+}
+
+.sam {
+  display: block;
+  position: relative;
+  height: 100%;
+}
+.sam__image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+@media (max-width: 1100px) {
+  .sam__image {
+    padding: 0px 0px 50% 0px;
+  }
+}
+.sam__logo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(98, 175, 148, 0.5254901961);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 0;
+  visibility: hidden;
+}
+.sam:hover .sam__logo {
+  opacity: 1;
+  visibility: visible;
+}
+
+.retro__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media (max-width: 1100px) {
+  .retro__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.retro__column {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 33.333%;
+          flex: 0 1 33.333%;
+}
+.mam {
+  display: block;
+  position: relative;
+  height: 100%;
+}
+.mam__image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+@media (max-width: 1100px) {
+  .mam__image {
+    padding: 0px 0px 50% 0px;
+  }
+}
+.mam__logo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(98, 175, 148, 0.5254901961);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 0;
+  visibility: hidden;
+}
+.mam:hover .mam__logo {
+  opacity: 1;
+  visibility: visible;
+}
+
+.content-retro {
+  text-align: center;
+  padding: 70px 65px 55px 65px;
+  position: relative;
+}
+@media (max-width: 1400px) {
+  .content-retro {
+    padding: 40px 35px 30px 35px;
+  }
+}
+.content-retro::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  margin: 0px 0px 0px -10px;
+  z-index: 3;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #fff;
+}
+.content-retro__icon {
+  margin: 0px 0px 34px 0px;
+}
+.content-retro__title {
+  color: #353738;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
+  margin: 0px 0px 24px 0px;
+}
+.content-retro__text {
+  color: #848789;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 29.99px;
+}
+.content-retro__text::after {
+  content: "";
+  width: 50px;
+  height: 1px;
+  background-color: black;
+  display: block;
+  margin: 35px auto 0 auto;
+}
+.content-retro__image {
+  padding: 0px 0px 37.51% 0px;
+}
+
+/* Слайдер */
+.slick-slider {
+  position: relative;
+}
+
+/* Слайдер запущен */
+/* Слайдер с точками */
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+
+/* Лента слайдов */
+.slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+/* Слайд */
+/* Слайд активный (показывается) */
+/* Слайд основной */
+/* Слайд по центру */
+/* Клонированный слайд */
+/* Стрелка */
+/* Стрелка влево */
+/* Стрелка вправо */
+/* Стрелка не активная */
+/* Точки (булиты) */
+.slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* Активная точка */
+.slick-dots li.slick-active button {
+  background-color: #848789;
+}
+
+/* Элемент точки */
+.slick-dots li button {
+  font-size: 0;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  border: 1px solid #c8c8c8;
+  background-color: #282f35;
+  margin: 0px 10px 0px 0px;
+}
+
+.slider__item {
+  padding: 120px 0px 60px 0px;
+}
+.slider__icon {
+  margin: 0px 0px 35px 0px;
+  text-align: center;
+}
+.slider__title {
+  margin: 0px 0px 20px 0px;
+  color: #353738;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+}
+.slider__title span {
+  color: #d3d3d4;
+}
+.slider__text {
+  color: #848789;
+  font-size: 24px;
+  font-style: italic;
+  line-height: 34px;
+  text-align: center;
+}
+
 body {
   font-family: "Lato";
 }

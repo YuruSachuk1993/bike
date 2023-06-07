@@ -1,4 +1,4 @@
-.vintage {
+.retro {
    &__row {
       display: flex;
       @media (max-width: 1100px) {
@@ -8,22 +8,52 @@
 
    &__column {
       flex: 0 1 33.333%;
-      &_g {
-         flex: 0 1 66.667%;
-      }
+   }
+
+   &__mam {
    }
 
    &__content {
    }
-
+}
+.mam {
+   display: block;
+   position: relative;
+   height: 100%;
    &__image {
-      padding: 0px 0px 37.51% 0px;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      @media (max-width: 1100px) {
+         padding: 0px 0px 50% 0px;
+      }
    }
 
-   &__sam {
+   &__logo {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #62af9486;
+      transition: 0.3s;
+      opacity: 0;
+      visibility: hidden;
+   }
+   &:hover {
+      .mam__logo {
+         opacity: 1;
+         visibility: visible;
+      }
    }
 }
-.blask {
+.content-retro {
    text-align: center;
    padding: 70px 65px 55px 65px;
    position: relative;
@@ -36,7 +66,7 @@
       bottom: -10px;
       left: 50%;
       margin: 0px 0px 0px -10px;
-      z-index: 2;
+      z-index: 3;
       width: 0;
       height: 0;
       border-left: 10px solid transparent;
@@ -72,43 +102,8 @@
          margin: 35px auto 0 auto;
       }
    }
-}
-.sam {
-   display: block;
-   position: relative;
-
-   height: 100%;
 
    &__image {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      @media (max-width: 1100px) {
-         padding: 0px 0px 50% 0px;
-      }
-   }
-
-   &__logo {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      z-index: 2;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: #62af9486;
-      transition: 0.3s;
-      opacity: 0;
-      visibility: hidden;
-   }
-   &:hover {
-      .sam__logo {
-         opacity: 1;
-         visibility: visible;
-      }
+      padding: 0px 0px 37.51% 0px;
    }
 }
