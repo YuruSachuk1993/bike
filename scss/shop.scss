@@ -1,0 +1,31 @@
+.shop {
+   &__body {
+      display: flex;
+      padding: 68px 0px 0px 0px;
+   }
+
+   &__column {
+      flex: 0 1 16.666%;
+      &_b {
+         flex: 0 1 33.333%;
+      }
+   }
+
+   &__block {
+   }
+}
+.block-shop {
+   &__row {
+      display: flex;
+   }
+
+   &__column {
+      flex: 0 1 50%;
+   }
+}
+
+.item {
+   &_b {
+      padding: 0px 0px 0px 0px;
+   }
+}
